@@ -1,3 +1,5 @@
+//1
+
 let number;
 
 function logMessage() {
@@ -13,6 +15,8 @@ function logMultiply() {
 number = logMessage();
 logMultiply();
 setTimeout(logMultiply, 2000);
+
+//2
 
 function getWords() {
     console.log('BeetleJuice');
@@ -30,8 +34,6 @@ function getWords() {
 getWords();
 
 
-
-
 function countdown(num, callback) {
     setTimeout(callback, num * 1000);
 }
@@ -42,18 +44,7 @@ function done() {
 
 countdown(2, done);
 
-
-// Create a global variable and set it equal to true or false
-// Create a new promise named orderingChickenSandwich
-// In the resolver function for the promise check if the global variable is true.
-// If the global variable is true, create an object with two properties (key/value pair):
-// sandwich : chicken
-// veggies: lettuce
-// Resolve the object
-// If the global variable is false, create a variable and set it equal to a new Error. (hint)
-// Reject this new variable
-// Create a new function named orderFood that will call the promise you made and console log the result if the promise is fulfilled or if it is rejected
-// Call the orderFood function and test each outcome
+//3
 
 let chickenSandwich = true;
 
@@ -76,6 +67,7 @@ function orderFood() {
 
 orderFood();
 
+//4
 
 new Promise((resolve, reject) => {
     setTimeout(() => {
